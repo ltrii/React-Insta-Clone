@@ -1,6 +1,7 @@
 import React from 'react';
 import CommentSection from '../CommentSection/CommentContainer';
 import PostHeader from './PostHeader';
+import PropTypes from 'prop-types';
 import { Card, CardImg, CardText, CardBody, CardLink,
     CardTitle, CardSubtitle } from 'reactstrap';
   
@@ -9,7 +10,7 @@ import { Card, CardImg, CardText, CardBody, CardLink,
   const Post = props => {
     return (
       <div className="postBorder">
-      <card>
+      <Card>
           <CardBody>
         <PostHeader
           username={props.post.username}
@@ -21,11 +22,14 @@ import { Card, CardImg, CardText, CardBody, CardLink,
             src={props.post.imageUrl}
           />
         <CardBody>
+          <CardText>
         <CommentSection comments={props.post.comments} />
+        </CardText>
         </CardBody>
-        </card>
+        </Card>
       </div>
   );
 };
+
 
 export default Post;
