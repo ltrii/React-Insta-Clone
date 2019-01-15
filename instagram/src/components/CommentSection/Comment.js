@@ -5,9 +5,11 @@ import './Comment.css';
 const Comment = props => {
   return (
     <div className="commentText">
+
+    <div className="user">{props.comment.username}</div>
+    {' '}
       <div className="comment">{props.comment.text}</div>
-      {' '}
-      <div className="user">-{props.comment.username}</div>
+
     </div>
   );
 };
