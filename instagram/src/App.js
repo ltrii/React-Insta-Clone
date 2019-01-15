@@ -31,7 +31,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <SearchBar />
+        <SearchBar searchPosts={this.searchAllPosts} searchTerm={this.state.searchTerm} />
         <PostsContainer posts={this.state.filterPosts.length > 0 ? this.state.filterPosts : this.state.posts} />
       </div>
     );

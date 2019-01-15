@@ -6,7 +6,7 @@ import HeartIMG from '../../assets/heart.svg';
 import UserIMG from '../../assets/user.svg';
 import './SearchBar.css';
 
-const SearchBar = () => {
+const SearchBar = props => {
   return (
     <div className="searchBarFull">
       <div className="imageContain">
@@ -18,7 +18,7 @@ const SearchBar = () => {
       </div>
       </div>
       <div>
-        <input type="text" placeholder="Search" />
+        <input type="text" placeholder="Search" onKeyDown={props.searchPosts} />
       </div>
       <div className="socialSection">
         <div className="social">
