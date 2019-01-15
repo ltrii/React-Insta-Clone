@@ -7,23 +7,34 @@ import { Card, CardImg, CardText, CardBody, CardLink,
   
   import './Post.css';
   
-  const Post = props => {
+  class Post extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+      }
+    }
+
+
+
+    render(){
     return (
       <div className="postBorder">
       <Card>
         <PostHeader
-          username={props.post.username}
-          thumbnailUrl={props.post.thumbnailUrl}
+          username={this.props.post.username}
+          thumbnailUrl={this.props.post.thumbnailUrl}
         />
       <CardImg width="100%" alt="post thumbnail"
             className="post-image"
-            src={props.post.imageUrl}
+            src={this.props.post.imageUrl}
           />
-        <CommentSection comments={props.post.comments} />
+        <CommentSection pID={this.props.post.imageUrl} comments={this.props.post.comments} />
         </Card>
       </div>
   );
+    }
 };
+
 
 
 export default Post;

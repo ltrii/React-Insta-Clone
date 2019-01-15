@@ -8,6 +8,9 @@
     height: 50px;
     display: flex;
     align-items: center;
+    font-weight: bold;
+    font-size: 0.95em;
+    margin: 5px;
 }
 
 .postThumb {
