@@ -1,5 +1,8 @@
 import React from 'react';
 import IGLogo from '../../assets/instagramlogo.svg';
+import CompassIMG from '../../assets/compass.svg';
+import HeartIMG from '../../assets/heart.svg';
+import UserIMG from '../../assets/user.svg';
 import './SearchBar.css';
 
 const SearchBar = () => {
@@ -14,15 +17,15 @@ const SearchBar = () => {
       <div className="socialSection">
         <div className="social">
           <img className="sea compass"
-               src="../../assets/compass.svg" />
+               src={CompassIMG} alt="Compass" />
         </div>
         <div className="social">
         <img className="sea heart"
-               src="../../assets/heart.svg" />
+               src={HeartIMG} alt="Heart"/>
         </div>
         <div className="social">
         <img className="sea user"
-               src=".../assets/user.svg" />
+               src={UserIMG} alt="User"/>
         </div>
       </div>
     </div>

@@ -1,9 +1,9 @@
 .searchBarFull {
     width: 100%;
-    height: 120px;
+    height: 75px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .searchBarFull input {
@@ -15,5 +15,18 @@
 }
 
 .logoImage {
-    height: 120px;
+    width: 100px;}
+
+.socialSelection {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    width: 300px;
+}
+
+.socialSelection .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
