@@ -15,6 +15,7 @@ import { Card, CardImg } from 'reactstrap';
     }
 
     addLike = () => {
+      console.log("addlike run");
       let likes = this.state.likes + 1;
       this.setState({likes});
     }

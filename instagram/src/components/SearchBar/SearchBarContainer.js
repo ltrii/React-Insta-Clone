@@ -11,7 +11,7 @@ const SearchBar = props => {
     <div className="searchBarFull">
       <div className="imageContain">
       <div className="img1">
-        <img alt="camera logo" src={CameraLogo} classname="cameraLogo" />
+        <img alt="camera logo" src={CameraLogo} className="cameraLogo" />
       </div>
       <div className="img2">
         <img alt="instagram logo" src={IGLogo} className="logoImage" />
