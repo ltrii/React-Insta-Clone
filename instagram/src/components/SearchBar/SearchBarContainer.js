@@ -1,5 +1,6 @@
 import React from 'react';
 import IGLogo from '../../assets/instagramlogo.svg';
+import CameraLogo from '../../assets/instagram.svg'
 import CompassIMG from '../../assets/compass.svg';
 import HeartIMG from '../../assets/heart.svg';
 import UserIMG from '../../assets/user.svg';
@@ -9,7 +10,12 @@ const SearchBar = () => {
   return (
     <div className="searchBarFull">
       <div className="imageContain">
+      <div className="img1">
+        <img alt="camera logo" src={CameraLogo} classname="cameraLogo" />
+      </div>
+      <div className="img2">
         <img alt="instagram logo" src={IGLogo} className="logoImage" />
+      </div>
       </div>
       <div>
         <input type="text" placeholder="Search" />

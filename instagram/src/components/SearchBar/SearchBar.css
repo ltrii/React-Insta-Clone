@@ -1,9 +1,10 @@
 .searchBarFull {
     width: 100%;
-    height: 75px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    border-bottom: 1px solid rgb(212, 212, 212);
 }
 
 .searchBarFull input {
@@ -14,19 +15,42 @@
     color: rgb(126, 126, 126);
 }
 
-.logoImage {
-    width: 100px;}
-
-.socialSelection {
+.imageContain {
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
-    width: 300px;
+    align-items: center;
+    width: 15%;
 }
 
-.socialSelection .social {
+.logoImage {
+    width: 100%;
+}
+
+.img2 {
+    width: 100px;
+    border-left: 1px solid rgb(204, 204, 204);
+}
+
+.img1 {
+    width: 50px;
+    margin: 0px 3%;
+}
+
+.cameraLogo {
+    width: 100%;
+}
+
+.socialSection {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    width: 15%;
+}
+
+.socialSection .social {
+    width: 100%;
+    height: 100%;
+}
+
+.socialSection .social img {
+    width: 25px;
+    height: 25px;
 }
