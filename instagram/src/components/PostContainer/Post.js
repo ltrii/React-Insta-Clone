@@ -11,21 +11,15 @@ import { Card, CardImg, CardText, CardBody, CardLink,
     return (
       <div className="postBorder">
       <Card>
-          <CardBody>
         <PostHeader
           username={props.post.username}
           thumbnailUrl={props.post.thumbnailUrl}
         />
-        </CardBody>
       <CardImg width="100%" alt="post thumbnail"
             className="post-image"
             src={props.post.imageUrl}
           />
-        <CardBody>
-          <CardText>
         <CommentSection comments={props.post.comments} />
-        </CardText>
-        </CardBody>
         </Card>
       </div>
   );

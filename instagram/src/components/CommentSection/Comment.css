@@ -1,0 +1,9 @@
+.commentContain {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.commentText {
+    display: flex;
+}
