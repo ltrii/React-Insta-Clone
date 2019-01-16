@@ -1,6 +1,6 @@
 .searchBarFull {
     width: 100%;
-    height: 80px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,7 +21,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 15%;
+    justify-content: center;
+    width: 14%;
 }
 
 .logoImage {
@@ -29,15 +30,13 @@
 }
 
 .img2 {
-    width: 200px;
-    max-height: 70px;
+    width: fit-content;
     padding-left: 10px;
     border-left: 1px solid rgb(204, 204, 204);
 }
 
 .img1 {
-    width: 70px;
-    max-height: 70px;
+    width: fit-content;
     margin: 0px 3%;
     padding-right: 10px;
 }
@@ -48,7 +47,7 @@
 
 .socialSection {
     display: flex;
-    width: 15%;
+    width: 14%;
 }
 
 .socialSection .social {
