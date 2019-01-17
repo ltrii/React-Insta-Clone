@@ -9,6 +9,7 @@ const HeaderContain = styled.div`
     align-items: center;
     height: 100px;
     width: 100%;
+    border-bottom: 1px solid grey;
     `;
 
 const LogoContain = styled.div`
@@ -16,10 +17,14 @@ const LogoContain = styled.div`
     display: flex;
     align-items: center;
 
+    img {
+        height: 75px;
+        padding: 0 5px;
+    }
     `;
 
 const SearchContain = styled.div`
-    width: 225px;
+    width: 250px;
 `;
 
 const SocialContain = styled.div`
@@ -29,6 +34,9 @@ const SocialContain = styled.div`
     align-items: center;
 
     i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 50px;
         width: 50px;
         font-size: 1.5em;
@@ -36,8 +44,14 @@ const SocialContain = styled.div`
     `;
 
 const SearchBox = styled.input`
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-text: center;
+    background-color: rgb(244,244,244);
+    border: 1px solid rgb(233,233,233);
     width: 100%;
-    padding: 5px;
+    padding: 4px;
 `;
 
 const Header = props => {
