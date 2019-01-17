@@ -36,6 +36,21 @@ const LogoContain = styled.div`
 
 const SearchContain = styled.div`
     width: 250px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: rgb(244,244,244);
+    border: 1px solid rgb(233,233,233);
+    border-radius: 3px;
+
+    i {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        font-size: 1.5em;
+        color: rgb(200,200,200);
+    }
 `;
 
 const SocialContain = styled.div`
@@ -55,14 +70,12 @@ const SocialContain = styled.div`
     `;
 
 const SearchBox = styled.input`
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    background-color: rgb(244,244,244);
-    border: 1px solid rgb(233,233,233);
     width: 100%;
     padding: 4px;
+    border: none;
+    background-color: rgb(244,244,244);
+    color: rgb(200,200,200);
+    font-size: .95em;
 `;
 
 const Header = props => {
@@ -74,6 +87,7 @@ const Header = props => {
             <h1>Instagram</h1>
         </LogoContain>
         <SearchContain>
+        <i class="fas fa-search"></i>
             <SearchBox type="text" placeholder="Search" onKeyDown={props.searchPosts} />
         </SearchContain>
         <SocialContain>
