@@ -9,7 +9,7 @@ const HeaderContain = styled.div`
     align-items: center;
     height: 100px;
     width: 100%;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgb(233,233,233);
     `;
 
 const LogoContain = styled.div`
@@ -18,8 +18,19 @@ const LogoContain = styled.div`
     align-items: center;
 
     img {
-        height: 75px;
+        height: 50px;
         padding: 0 5px;
+        border-right: 1px solid rgb(233,233,233);
+        margin-right: 3px;
+        padding: 0 10px;
+    }
+
+    h1 {
+        display: flex;
+        font-size: 3.5em;
+        align-items: center;
+        font-family: 'Cookie';
+        padding: 0 10px;
     }
     `;
 
@@ -47,7 +58,7 @@ const SearchBox = styled.input`
     display: flex;
     justify-content: center;
     align-content: center;
-    align-text: center;
+    text-align: center;
     background-color: rgb(244,244,244);
     border: 1px solid rgb(233,233,233);
     width: 100%;
@@ -60,7 +71,7 @@ const Header = props => {
          <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css' />
         <LogoContain>
             <img src={IGLogo} alt="logo" />
-            <h1 className="headerName">Instagram</h1>
+            <h1>Instagram</h1>
         </LogoContain>
         <SearchContain>
             <SearchBox type="text" placeholder="Search" onKeyDown={props.searchPosts} />

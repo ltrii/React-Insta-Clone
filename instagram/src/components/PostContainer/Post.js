@@ -4,7 +4,7 @@ import PostHeader from './PostHeader';
 import Likes from '../PostContainer/Likes';
 import { Card, CardImg } from 'reactstrap';
   
-  import './Post.css';
+import './Post.css';
   
   class Post extends React.Component {
     constructor(props) {
