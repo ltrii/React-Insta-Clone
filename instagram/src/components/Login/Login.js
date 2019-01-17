@@ -25,7 +25,7 @@ class Login extends Component {
     return (
       <Form className="login-form">
         <h3>Welcome to !instagram</h3>
-        <div>Login below</div>
+        <div>Please log in...</div>
         <FormGroup>
           <Input
             type="text"

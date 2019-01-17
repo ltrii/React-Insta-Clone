@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import dummyData from '../../dummy-data';
 import PostContainer from '../PostContainer/PostContainer';
 import SearchBar from '../SearchBar/SearchBarContainer'
+import Header from '../Header/Header';
 
 class PostsPage extends Component {
   constructor() {
@@ -30,7 +31,7 @@ class PostsPage extends Component {
   render() {
     return (
       <div className="App">
-        <SearchBar searchPosts={this.searchAllPosts} searchTerm={this.state.searchTerm} />
+        <Header searchPosts={this.searchAllPosts} searchTerm={this.state.searchTerm} />
         <PostContainer posts={this.state.filterPosts.length > 0 ? this.state.filterPosts : this.state.posts} />
       </div>
     );
