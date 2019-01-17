@@ -51,6 +51,7 @@ const SearchContain = styled.div`
         font-size: 1.5em;
         color: rgb(200,200,200);
     }
+
 `;
 
 const SocialContain = styled.div`
@@ -74,8 +75,11 @@ const SearchBox = styled.input`
     padding: 4px;
     border: none;
     background-color: rgb(244,244,244);
-    color: rgb(200,200,200);
     font-size: .95em;
+
+   &:focus {
+       outline: none;
+   } 
 `;
 
 const Header = props => {

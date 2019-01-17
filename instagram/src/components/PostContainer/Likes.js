@@ -1,18 +1,46 @@
 import React from 'react';
 
-import Heart from '../../assets/heart.svg';
-import Comment from '../../assets/comment.svg';
+import styled, { css } from 'styled-components';
+
+const LikesHold = styled.div`
+    display: flex;
+    flex-direction: column;
+    `;
+
+const LikesButtons = styled.div`
+    display: flex;
+    align-items: center;
+    `;
+
+const LikeButton = styled.div`
+    padding: 5px;
+
+    i {
+        font-size: 1.5em;
+    }
+    `;
+
+const LikeDisplay = styled.div`
+    padding-left: 5px;
+    font-size: .9em;
+    font-weight: bold;
+    `;
 
 const Likes = props => {
     return (
-        <div className="likesContain" key="likesContainer" onClick={props.addLike}>
-            <div className="likeimg">
-                <img className="like heart" src={Heart} ></img>
-            </div>
-            <div className="likeimg">
-                <img className="like comment" src={Comment} ></img>
-            </div>
-        </div>
+        <LikesHold key="likesContainer">
+            <LikesButtons>
+            <LikeButton onClick={props.addLike}>
+                <i class="far fa-heart"></i>
+            </LikeButton>
+            <LikeButton>
+                <i class="far fa-comment"></i>
+            </LikeButton>
+            </LikesButtons>
+            <LikeDisplay>
+                {props.likes} likes.
+            </LikeDisplay>
+        </LikesHold>
     )
 }
 

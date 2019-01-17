@@ -19,16 +19,3 @@
     height: 50px;
     padding: 5px;
 }
-
-.likesContain {
-    display: flex;
-}
-
-.likesContain .likeimg {
-    width: 25px;
-    margin: 5px;
-}
-
-.likesContain .likeimg img {
-    width: 100%;
-}

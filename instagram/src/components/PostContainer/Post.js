@@ -30,7 +30,7 @@ import './Post.css';
           username={this.props.post.username}
           thumbnailUrl={this.props.post.thumbnailUrl}
         />
-      <CardImg width="100%" alt="post thumbnail"
+          <CardImg width="100%" alt="post thumbnail"
             className="post-image"
             src={this.props.post.imageUrl}
           />
