@@ -1,0 +1,21 @@
+.postBorder {
+    width: 614px;
+    margin: 10px auto;
+}
+
+.postHeader {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.95em;
+    margin: 5px;
+}
+
+.postThumb {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
